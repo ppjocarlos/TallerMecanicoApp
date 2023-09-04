@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="color">
+    <ion-title> Recuperar Contraseña </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button class="letraBlanca"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <p></p>
+  <ion-img src="assets/imagenes/recuperar.svg" alt=""></ion-img>
+
+  <ion-item>
+    <p></p>
+    <ion-label position="floating" > Usuario </ion-label>
+    <p></p>
+    <ion-input placeholder="Ingrese su usuario"> </ion-input>
+  </ion-item> 
+
+  <div>
+    <ion-button [routerLink]="['/login']" class="color" shape="block" >Recuperar</ion-button>
+  </div> 
+
+</ion-content>
