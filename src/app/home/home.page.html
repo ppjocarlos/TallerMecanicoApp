@@ -1,11 +1,22 @@
 <ion-menu contentId="main-content">
   <ion-header>
     <ion-toolbar>
-      <ion-title> {{ mensaje }} </ion-title>
+      <ion-title>
+        {{ mensaje }} </ion-title>
     </ion-toolbar>
 
   </ion-header>
-  <ion-content class="ion-padding">This is the menu content.</ion-content>
+
+
+  <ion-content class="ion-padding ">
+    
+    <div>
+      <ion-button [routerLink]="['/login']" class="my-button" >
+        <ion-icon name="log-out-outline"></ion-icon>
+
+        Salir</ion-button>
+    </div> 
+  </ion-content>
 </ion-menu>
 <div class="ion-page" id="main-content">
   <ion-header>
@@ -19,5 +30,7 @@
 
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding"> BIENVENIDO {{ mensaje }} </ion-content>
+  <ion-content class="ion-padding"> BIENVENIDO {{ mensaje }} 
+
+</ion-content>
 </div>

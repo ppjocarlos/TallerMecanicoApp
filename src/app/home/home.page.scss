@@ -1,8 +1,17 @@
 .color{
-    --background: MidnightBlue;
+    --background: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);
     --color: white;
 }
 
 .letraBlanca{
     --color: white;
 }
+
+.my-button{
+    --background: linear-gradient( 135deg, #FFAA85 10%, #B3315F 100%);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin:10px;
+}
+

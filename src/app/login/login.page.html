@@ -1,31 +1,41 @@
-<ion-header [translucent]="true">
-  <ion-toolbar class="color">
-    <ion-title> TecnoCar </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
-  <ion-img src="assets/imagenes/login2.svg" alt=""></ion-img>
-
-  <ion-item>
-    <ion-label position="floating" > Usuario </ion-label>
-    <ion-input [(ngModel)]="usuario" placeholder="Ingrese su usuario"> </ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label  position="floating" > Contraseña </ion-label>
-    <ion-input [(ngModel)]="password" type="password" placeholder="Ingrese su contraseña"> </ion-input>
-  </ion-item>
- 
-  <div>
-    <ion-button (click)="iniciarSesion()" shape="block" class="color">Iniciar Sesión</ion-button>
+  <div class="ion-text-center">
+    <img src="assets/imagenes/logoF.jpg" class="img1"  shape="round"/>
   </div>
-  <div>
-    <ion-button [routerLink]="['/recuperar']" shape="block" >Recuperar Contraseña</ion-button>
-  </div> 
 
+  <div class="container">
+    <div class="form ion-text-center">
+      <h2>TecnoCar</h2>
 
+      <ion-item lines="none">
+        <ion-input [(ngModel)]="usuario" placeholder="Usuario"></ion-input>
+      </ion-item>
 
-    
+      <ion-item lines="none">
+        <ion-input
+          [(ngModel)]="password"
+          placeholder="Contraseña"
+          type="password"
+        ></ion-input>
+      </ion-item>
+
+      <ion-button
+        expand="block"
+        class="color"
+        shape="round"
+        (click)="iniciarSesion()"
+      >
+        Iniciar Sesión
+      </ion-button>
+
+      <ion-button
+        [routerLink]="['/recuperar']"
+        expand="block"
+        class="color"
+        shape="round"
+      >
+        Recuperar Contraseña
+      </ion-button>
+    </div>
+  </div>
 </ion-content>

@@ -8,7 +8,7 @@ import { NavigationExtras, Router } from '@angular/router'
 })
 
 export class LoginPage implements OnInit {
-  value='Clear me'
+  
   usuario: string =""
   password: string =""
 
